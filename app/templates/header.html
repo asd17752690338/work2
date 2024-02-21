@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+                <div class="content-section">
+                    <h3>Practical statistics</h3>
+                    <p class='text-muted'>List of Top 10 Abbreviations and Their Corresponding Full Names.</p>
+                    <ul class="list-group">
+                        {% for key, value in data %}
+                            <li class="list-group-item list-group-item-light">{{ key }}<span style="display:inline-block; width:30px;"></span>{{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+{% endblock %}
